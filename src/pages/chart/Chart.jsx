@@ -1,65 +1,70 @@
-// src/components/ChartComponent.js
-import React, { useState } from 'react';
+// src/components/ActivityChart.js
+import React from 'react';
 import { Bar } from 'react-chartjs-2';
+import styled from 'styled-components';
+import "./chart.css"
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
+const ChartContainer = styled.div`
+  background: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  color:#000;
+  max-height:320px;
+  width:100%;
+`;
+
+const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      display: false,
+    },
+    title: {
+      display: true,
+      text: 'Activity',
+      color: '#000',
+    },
+  },
+  scales: {
+    x: {
+      ticks: {
+        color: '#000',
+      },
+      grid: {
+        display: false,
+      },
+    },
+    y: {
+      ticks: {
+        color: '#000',
+      },
+      grid: {
+        color: '#000',
+      },
+    },
+  },
+};
+
 const data = {
-  labels: [], // Will be populated dynamically
+  labels: ['5', '9', '11', '13', '15', '17', '19', '21', '23', '25'],
   datasets: [
     {
-      label: 'Data',
-      data: [], // Will be populated dynamically
-      backgroundColor: 'rgba(75, 192, 192, 0.2)',
-      borderColor: 'rgba(75, 192, 192, 1)',
-      borderWidth: 1,
+      label: 'Activity',
+      data: [4000, 3000, 2000, 5000, 6000, 7000, 8000, 9000, 10000, 11000],
+      backgroundColor: '#6a5acd',
     },
   ],
 };
 
-const ChartComponent = () => {
-  const [chartData, setChartData] = useState(data);
-
-  const updateChartData = (period) => {
-    let labels = [];
-    let dataPoints = [];
-
-    // Generate dummy data for demonstration
-    switch (period) {
-      case 'weekly':
-        labels = ['Week 1', 'Week 2', 'Week 3', 'Week 4'];
-        dataPoints = [12, 19, 3, 5];
-        break;
-      case 'monthly':
-        labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May'];
-        dataPoints = [29, 45, 23, 56, 67];
-        break;
-      case 'yearly':
-        labels = ['2021', '2022', '2023'];
-        dataPoints = [120, 150, 200];
-        break;
-      default:
-        break;
-    }
-
-    setChartData({
-      ...chartData,
-      labels: labels,
-      datasets: [{ ...chartData.datasets[0], data: dataPoints }],
-    });
-  };
-
+function ActivityChart() {
   return (
-    <div>
-      <div>
-        <button onClick={() => updateChartData('weekly')}>Weekly</button>
-        <button onClick={() => updateChartData('monthly')}>Monthly</button>
-        <button onClick={() => updateChartData('yearly')}>Yearly</button>
-      </div>
-      <Bar data={chartData} options={{ responsive: true }} />
-    </div>
+    <ChartContainer>
+      <Bar options={options} data={data} />
+    </ChartContainer>
   );
-};
+}
 
-export default ChartComponent;
+export default ActivityChart;

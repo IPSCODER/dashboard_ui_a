@@ -9,6 +9,7 @@ import Table from '../../components/table/Table';
 import { tableColunm, tableData } from '../../constants/tabledata';
 import { basketIcon, burgerIcon, cartIcon, dishIcon, goalIcon, moneyDown } from '../../assets/svgs/svgs';
 import profileImg from "../../assets/imgs/woman.png"
+import ActivityChart from '../chart/Chart';
 
 const Home = () => {
 
@@ -102,10 +103,10 @@ const Home = () => {
 <ProgressCard/>
       </Card>
       <Card className='col-span-2 md:col-span-4' >
-      {/* <ChartComponent/> */}
+      <ActivityChart/>
       </Card>
       <Card className='col-span-2 md:col-span-4 lg:col-span-3 p-2' >
-        <ul className='flex flex-col gap-4'>
+        <ul className='flex flex-col gap-4 h-full'>
           {topic.map((item)=>(
             <TopicCard key={item.id} icon={item.icon} title={item.title}  />
           ))}
