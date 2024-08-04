@@ -198,13 +198,13 @@ export const rightIcon = (
 )
 
 export const upIcon = (
-  <svg   width={12} height={12} fill="#22bb33" viewBox="0 0 15 15">
-  <path fill="#22bb33" d="M7.5 3l7.5 8H0l7.5-8z"></path>
+  <svg   width={12} height={12} fill="#057A55" viewBox="0 0 15 15">
+  <path fill="#057A55" d="M7.5 3l7.5 8H0l7.5-8z"></path>
 </svg>
 )
 
 export const downIcon = (
-  <svg width={12} height={12} fill="#bb2124" viewBox="0 0 24 24">
+  <svg width={12} height={12} fill="#E02424" viewBox="0 0 24 24">
   <path d="M11.178 19.569a.998.998 0 001.644 0l9-13A.999.999 0 0021 5H3a1.002 1.002 0 00-.822 1.569l9 13z"></path>
 </svg>
 )

@@ -5,7 +5,7 @@ const CountingCard = ({icon,title,number,percentage,bg}) => {
   return (
     <>
     <div className='flex flex-col p-2 w-full min-h-20 gap-1' >
-        <span className={`w-12 h-12 bg-[${percentage > 0 ? "#22bb33" :"#bb2124" }] flex items-center justify-center rounded-md`} >
+        <span className={`w-12 h-12 ${percentage > 0 ? 'bg-green-600' : 'bg-red-600' } flex items-center justify-center rounded-md`} >
           {icon}
         </span>
         <p className='text-sm font-semibold' >
