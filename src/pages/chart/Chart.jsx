@@ -11,9 +11,9 @@ const ChartContainer = styled.div`
   background: none;
   padding: 10px;
   margin-bottom: 10px;
-  color:#000;
-  max-height:320px;
-  width:100%;
+  color: #000;
+  max-height: 320px;
+  width: 100%;
 `;
 
 const options = {
@@ -54,7 +54,10 @@ const data = {
     {
       label: 'Activity',
       data: [4000, 3000, 2000, 5000, 6000, 7000, 8000, 9000, 10000, 11000],
-      backgroundColor: '#6a5acd',
+      backgroundColor: '#111',
+      borderRadius: 20, // Add this line to give border-radius to the bars
+      borderSkipped: false, // Add this line to apply the border-radius to all corners
+      barThickness: 20, 
     },
   ],
 };

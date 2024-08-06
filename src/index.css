@@ -7,3 +7,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.CircularProgressbar-path {
+  stroke: "#A05AFF";
+}
+
+.goal-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.goal-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #20c997;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goal-point {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.arrow {
+  width: 2px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  animation: moveArrow 2s forwards;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translate(-100px, 0) rotate(45deg);
+  }
+  100% {
+    transform: translate(40px, 0) rotate(45deg);
+  }
+}

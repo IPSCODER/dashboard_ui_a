@@ -4,8 +4,8 @@ import { downIcon, upIcon } from '../../../assets/svgs/svgs'
 const CountingCard = ({icon,title,number,percentage,bg}) => {
   return (
     <>
-    <div className='flex flex-col p-2 w-full min-h-20 gap-1' >
-        <span className={`w-12 h-12 ${percentage > 0 ? 'bg-green-600' : 'bg-red-600' } flex items-center justify-center rounded-md`} >
+    <div className={`flex flex-col p-2 w-full min-h-20 rounded-md gap-1`} >
+        <span className={`w-12 h-12 shadow-inner flex items-center justify-center rounded-md ${percentage > 0 ? 'bg-green-900' : 'bg-red-900' }  `} >
           {icon}
         </span>
         <p className='text-sm font-semibold' >

@@ -11,6 +11,16 @@ const config = {
   ],
   theme: {
     extend: {
+
+      animation: {
+        'scale-up': 'scaleUp 0.3s ease-in-out',
+      },
+      keyframes: {
+        scaleUp: {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.1)' },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -20,7 +30,7 @@ const config = {
         primary: {
           dark: "#172554",
           "950": "#083344",
-          "900": "#233876",
+          "900": "#A05AFF",
           "800": "#1E429F",
           "700": "#0E7490",
           "600": "#0E7490",
@@ -44,7 +54,7 @@ const config = {
           "50": "#F9FAFB",
         },
         blue: {
-          "900": "#233876",
+          "900": "#4BCBEB",
           "800": "#1E429F",
           "700": "#1A56DB",
           "600": "#1C64F2",
@@ -56,7 +66,7 @@ const config = {
           "50": "#EBF5FF",
         },
         red: {
-          "900": "#771D1D",
+          "900": "#FE9496",
           "800": "#9B1C1C",
           "700": "#C81E1E",
           "600": "#E02424",
@@ -92,7 +102,7 @@ const config = {
           "50": "#FDFDEA",
         },
         green: {
-          "900": "#014737",
+          "900": "#1BCFB4",
           "800": "#03543F",
           "700": "#046C4E",
           "600": "#057A55",

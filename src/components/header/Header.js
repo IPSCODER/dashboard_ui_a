@@ -28,23 +28,23 @@ const Header = () => {
 
           <ul className='sm:flex hidden items-center gap-3 ml-auto'>
             <li>
-              <span className="w-8 h-8 rounded-full bg-primary-700 flex items-center justify-center" >
+              <span className="w-8 h-8 rounded-full bg-primary-900 flex items-center justify-center" >
                 {emailIcon}
               </span>
             </li>
             <li>
-              <span className="w-8 h-8 rounded-full bg-primary-700 flex items-center justify-center" >
+              <span className="w-8 h-8 rounded-full bg-primary-900 flex items-center justify-center" >
     {settingsIcon}
               </span>
             </li>
             <li>
-              <span className="w-8 h-8 rounded-full bg-primary-700 flex items-center justify-center" >
+              <span className="w-8 h-8 rounded-full bg-primary-900 flex items-center justify-center" >
               {notificationIcon}
               </span>
               </li>
           </ul>
 
-          <span className="w-8 h-8 rounded-full bg-primary-700 flex items-center ml-auto sm:ml-4 justify-center" >
+          <span className="w-8 h-8 rounded-full bg-primary-900 flex items-center ml-auto sm:ml-4 justify-center" >
             <img src={profileImg} alt="profile" />
           </span>
         </div>
