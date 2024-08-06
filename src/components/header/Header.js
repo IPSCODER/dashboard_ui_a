@@ -19,11 +19,11 @@ const Header = () => {
     
           </button>
 
-          <div className='border-primary-600 border rounded-lg h-10 overflow-hidden relative flex items-center'>
+          <div className='border-primary-900 border rounded-lg h-10 overflow-hidden relative flex items-center'>
             <span className="absolute left-2" >
             {searchIcon}
             </span>
-             <input type="text" className="pl-10 h-full pr-2 w-28 md:w-96 outline-none" placeholder="search" />
+             <input type="text" className="pl-10 h-full pr-2 w-28 md:w-96 outline-none" placeholder="Search..." />
           </div>
 
           <ul className='sm:flex hidden items-center gap-3 ml-auto'>
