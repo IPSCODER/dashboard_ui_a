@@ -49,12 +49,12 @@ const options = {
 };
 
 const data = {
-  labels: ['5', '9', '11', '13', '15', '17', '19', '21', '23', '25'],
+  labels: ['5', '9', '11', '13', '15', '17', '19', '21', '23', '25','27','29'],
   datasets: [
     {
       label: 'Activity',
-      data: [4000, 3000, 2000, 5000, 6000, 7000, 8000, 9000, 10000, 11000],
-      backgroundColor: '#111',
+      data: [4000, 3000, 2000, 5000, 6000, 7000, 8000, 9000, 10000, 11000,12000,13000],
+      backgroundColor: '#A05AFF',
       borderRadius: 20, // Add this line to give border-radius to the bars
       borderSkipped: false, // Add this line to apply the border-radius to all corners
       barThickness: 20, 

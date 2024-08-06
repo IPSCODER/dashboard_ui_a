@@ -111,7 +111,7 @@ const Home = () => {
       <Card className='col-span-2 md:col-span-4 lg:col-span-3' >
 <ProgressCard/>
       </Card>
-      <Card className='col-span-2 md:col-span-4' >
+      <Card className='col-span-2 md:col-span-4 flex items-center' >
       <ActivityChart/>
       </Card>
       <Card className='col-span-2 md:col-span-4 lg:col-span-3 p-2' >

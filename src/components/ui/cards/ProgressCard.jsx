@@ -3,6 +3,7 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import EaseInTimer from '../../../hooks/EaseInTimer';
 
+
 const ProgressCard = () => {
 
 
@@ -21,7 +22,10 @@ const ProgressCard = () => {
     <p className='text-sm' >3%</p>
           </span>
           <span className='h-28 flex flex-col gap-2'>
-          <CircularProgressbar strokeWidth={10} value={70} text={`${70}%`} />
+          <CircularProgressbar strokeWidth={10} value={70} text={`${70}%`} styles={{
+    path: { stroke: `#A05AFF` },
+    text:{fill:"#A05AFF"}
+  }} />
           <p className='text-xs text-center' >*The values here has been rounded off</p>
           </span>
         </div>
